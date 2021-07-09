@@ -18,7 +18,6 @@ COPY ./sqlx-data.json .
 ENV SQLX_OFFLINE true
 
 # Actual build
-RUN ls src/bin
 RUN cargo build --release
 
 # Final image

@@ -19,8 +19,10 @@ docker-compose up --build
 ## How sqlx works
 
 **On Host**
+
 Read `DATABASE_URL` in `.env`
 
 **On Docker API server**
+
 Read `DATABSE_URL` defined as `app: environment` in `docker-compose.yml`,
 pointing to bridged postgres server
