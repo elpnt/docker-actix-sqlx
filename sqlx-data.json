@@ -1,0 +1,27 @@
+{
+  "db": "PostgreSQL",
+  "edee21df8bbfb5219085565a2f2f67af543cd1923eea431b2b05d0e3f3e3e9e1": {
+    "query": "INSERT INTO todo (title, status) VALUES ($1, $2)",
+    "describe": {
+      "columns": [],
+      "parameters": {
+        "Left": [
+          "Varchar",
+          {
+            "Custom": {
+              "name": "status",
+              "kind": {
+                "Enum": [
+                  "todo",
+                  "doing",
+                  "done"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "nullable": []
+    }
+  }
+}
